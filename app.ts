@@ -2,15 +2,19 @@
 function combine(
   input1: number | string,
   input2: number | string,
-  resultType: string
+  // You can combine union type and literal type
+  resultType: "as number" | "as text"
 ) {
   let result;
 
   // Typecript can have runtime type checks too
-  if (typeof input1 === "number" && typeof input2 === "number")
-    result = input1 + input2;
+  if (
+    (typeof input1 === "number" && typeof input2 === "number") ||
+    resultType === "as number"
+  )
+    result = +input1 + +input2;
   else {
-    input1.toString() + input2.toString();
+    result = input1.toString() + input2.toString();
   }
   return result;
 }
