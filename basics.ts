@@ -1,4 +1,4 @@
-// Do 'tsc app.ts' in your terminal to compile your typescript down to javascript
+// Do 'tsc filename.ts' in your terminal to compile your typescript down to javascript
 
 // Typescript allows you to assign types
 function add(n1: number, n2: number, showResult: boolean, phrase: string) {
