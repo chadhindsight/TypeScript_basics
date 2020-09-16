@@ -1,4 +1,4 @@
-// return types determine what type is return from a function
+// return types determine what type is returned from a function
 function add(n1: number, n2: number) {
   return n1 + n2;
 }
@@ -15,10 +15,9 @@ printResult(add(5, 12));
 
 // Function types are types that describe a function
 let combinedValues: (a: number, b: number) => number;
-
 combinedValues = add;
 console.log(combinedValues(12, 4));
 
-addAndHandle(10, 12, (num) => {
+addAndHandle(10, 15, (num) => {
   console.log(num);
 });
