@@ -12,7 +12,7 @@
 //   role: [2, "Author"],
 // };
 
-// Enum lets you set identifiers which you want to represent as human readable values
+// Enum lets you set identifiers which you want to represent as human readable values!
 enum Role {
   ADMIN = "ADMIN",
   READ_ONLY = 100,
