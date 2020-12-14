@@ -14,3 +14,5 @@ function generateError(message: string, code: number): never {
 }
 
 generateError("An error occurred!", 500);
+// NB: to compile whole project with multiple files, from the terminal do 'tsc --init'
+// After that you can just run 'tsc'

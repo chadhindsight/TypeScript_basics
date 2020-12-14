@@ -17,4 +17,4 @@ function add(n1: number, n2: number, showResult: boolean, phrase: string) {
 let number1 = 28;
 let number2 = 5;
 add(number1, number2, true, "I love typesript!");
-// NB: The core primitive types in TypeScript are all lowercase!
+// NB: The core primitive types in TypeScript are all lowercase
