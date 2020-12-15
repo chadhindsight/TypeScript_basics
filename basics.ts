@@ -18,3 +18,4 @@ let number1 = 28;
 let number2 = 5;
 add(number1, number2, true, "I like typesript!");
 // NB: The core primitive types in TypeScript are all lowercase
+
