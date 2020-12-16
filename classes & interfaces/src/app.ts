@@ -5,7 +5,7 @@ class Department {
     // the private keyword makes employees only accesible within this specific Department class
     private employees: string[] = []
 
-    constructor(private id: string, public n:string) {
+    constructor(private id: string, public name:string) {
     }
 
     // method associated with this class
@@ -18,6 +18,13 @@ class Department {
     }
     printEmployeeInfo() {
         console.log(this.employees.length, this.employees )
+    }
+}
+
+// Inheritance. Use super() in a class that ineherits from another class
+class ITDepartment extends Department {
+    constructor(id: string, public admins: string[]) {
+        super(id, 'IT')
     }
 }
 
