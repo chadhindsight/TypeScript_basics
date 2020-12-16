@@ -28,7 +28,7 @@ class ITDepartment extends Department {
     }
 }
 
-//Create a new object based on the blueprint of Department class
+//Create a new object based on the blueprint of Department class!
 const accounting = new ITDepartment( 'd1', ['Devin'])
 accounting.describe()
 accounting.addEmployee('Max')
