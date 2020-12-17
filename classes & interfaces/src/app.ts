@@ -43,7 +43,7 @@ class AccoutingDepartment extends Department {
     
     // Allows you to set a value
     set mostRecentReport(val: string) {
-        if(!val) new Error(' Please pass a valid value')
+        if(!val) new Error(' Please pass a valid value ')
         this.addReport(val)
         
     }
