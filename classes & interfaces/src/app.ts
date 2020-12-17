@@ -3,7 +3,7 @@ class Department {
     // private readonly id: string
     // private name: string;
     // the private keyword makes employees only accesible within this specific Department class
-    private employees: string[] = []
+    protected employees: string[] = []
 
     constructor(private id: string, public name:string) {
     }
@@ -28,11 +28,32 @@ class ITDepartment extends Department {
     }
 }
 
-//Create a new object based on the blueprint of Department class!
-const accounting = new ITDepartment( 'd1', ['Devin'])
-accounting.describe()
-accounting.addEmployee('Max')
+//Create  new objects based on the blueprint of Department class!
+const it = new ITDepartment( 'd1', ['Devin'])
+it.describe()
+it.addEmployee('Max')
 
+class AccoutingDepartment extends Department {
+    private lastReport: string
+    constructor(id: string, private reports: string[] ) {
+        super(id, 'AC')
+        this.lastReport = this.reports[0]
+    }
+    addReport(text: string) {
+        this.reports.push(text)
+        this.lastReport = text
+    }
+    printReports() {
+        console.log(this.reports)
+    }
+    addEmployee(name: string) {
+        if(name === 'Max') {
+            return
+        } 
+            this.employees.push(name )
+    }
+}
 
-// const accountingCopy = { name: 'DUMMY', describe: accounting.describe };
-// accountingCopy.describe();
+const accounting = new AccoutingDepartment('d2', [])
+accounting.addEmployee('Nicolle')
+console.log(it)
