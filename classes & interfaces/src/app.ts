@@ -40,6 +40,14 @@ class AccoutingDepartment extends Department {
         if(this.lastReport) return this.lastReport
         throw new Error('No reports found!')
     }
+    
+    // Allows you to set a value
+    set mostRecentReport(val: string) {
+        if(!val) new Error(' Please pass a valid value')
+        this.addReport(val)
+        
+    }
+
     constructor(id: string, private reports: string[] ) {
         super(id, 'AC')
         this.lastReport = this.reports[0]
