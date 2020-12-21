@@ -21,7 +21,7 @@ class Department {
     }
 }
 
-// Inheritance. Use super() in a class that ineherits from another class
+// Inheritance. Use super() in a class that ineherits from another class!
 class ITDepartment extends Department {
     constructor(id: string, public admins: string[]) {
         super(id, 'IT')
