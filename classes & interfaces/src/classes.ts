@@ -3,6 +3,7 @@ class Department {
     // private readonly id: string
     // private name: string;
     // the private keyword makes employees only accesible within this specific Department class
+    // protected implies that the method or property is accessible only internally within the class
     protected employees: string[] = []
 
     constructor(private id: string, public name:string) {
