@@ -9,7 +9,7 @@ class Department {
     constructor(private id: string, public name:string) {
     }
 
-    // method associated with this class
+    // All methods associated with this class
     describe() {
         console.log('Department: ' + this.name)
     }
