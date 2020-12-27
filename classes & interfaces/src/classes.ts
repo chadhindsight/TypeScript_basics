@@ -1,4 +1,4 @@
-// Classes are syntax sugar for constructor functions!
+// Classes are syntax sugar for constructor functions
 class Department {
     // private readonly id: string
     // private name: string;
