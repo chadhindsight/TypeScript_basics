@@ -17,7 +17,7 @@
 // }
 
 ///// INTERFACES WITH CLASSES /////
-//A diff between a custom type and an interface is that interface is only used to describe objects custom can be used to other stuff
+//A diff between a custom type and an interface is that interface is only used to describe objects, custom can be used for other stuff
 // You can also implment inretitance in interfaces
 interface AddFn {
   (a: number, b: number): number;
