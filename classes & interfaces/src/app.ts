@@ -19,12 +19,24 @@
 ///// INTERFACES WITH CLASSES /////
 //A diff between a custom type and an interface is that interface is only used to describe objects custom can be used to other stuff
 // You can also implment inretitance in interfaces
-interface Greetable {
-  readonly name: string;
+interface AddFn {
+  (a: number, b: number): number;
+}
 
+let add: AddFn;
+
+add = (n1: number, n2: number) => {
+  return n1 + n2;
+};
+
+interface Named {
+  readonly name: string;
+}
+
+interface Greetable extends Named {
   greet(phrase: string): void;
 }
-// You can implement more than one interface, but you can only inherit from one class
+
 class Person implements Greetable {
   name: string;
   age = 30;
@@ -41,6 +53,7 @@ class Person implements Greetable {
 let user1: Greetable;
 
 user1 = new Person('Max');
-// Greetable forces anything based on it to have a greet method
+// user1.name = 'Manu';
+
 user1.greet('Hi there - I am');
 console.log(user1);
