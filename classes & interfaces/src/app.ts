@@ -31,6 +31,8 @@ add = (n1: number, n2: number) => {
 
 interface Named {
   readonly name: string;
+  //Mark outputName as optional. Objects based on Named interface may or may not have outputName
+  outputName?: string
 }
 
 interface Greetable extends Named {
