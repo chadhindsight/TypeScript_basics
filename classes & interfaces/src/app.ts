@@ -1,4 +1,4 @@
-// Interface describes the structure of an object
+// Interface describes the structure of an object. Not a blueprint, but a custom type
 // interface Person {
 //     name: string,
 //     age: number
@@ -17,7 +17,7 @@
 // }
 
 ///// INTERFACES WITH CLASSES /////
-// A diff between a custom type and an interface is that interface is only used to describe objects, custom can be used for other stuff
+// A diff between a custom type and an interface is that interface is only used to describe object structure, custom can be used for other stuff
 
 // You can also implment inretitance in interfaces
 interface AddFn {
