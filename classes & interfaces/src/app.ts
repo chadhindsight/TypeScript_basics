@@ -5,6 +5,7 @@
 
 //    greet(phrase: string): void 
 // }
+
 // // The user1 variable will be based on the Person interface
 // let user1: Person;
 
@@ -18,7 +19,7 @@
 
 ///// INTERFACES WITH CLASSES /////
 // A diff between a custom type and an interface is that interface is only used to describe object structure, custom can be used for other stuff
-
+// NB: You can implment multiple interfaces
 // You can also implment inretitance in interfaces
 interface AddFn {
   (a: number, b: number): number;
@@ -32,7 +33,7 @@ add = (n1: number, n2: number) => {
 
 interface Named {
   readonly name?: string;
-  //Mark outputName as optional. Objects based on Named interface may or may not have outputName
+  //Mark outputName property as optional. Objects based on Named interface may or may not have outputName
   outputName?: string
 }
 
