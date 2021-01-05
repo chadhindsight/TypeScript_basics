@@ -23,7 +23,7 @@ type Numeric = number | boolean;
 type Universal = Combinable & Numeric;
 
 function add(a:Combinable, b:Combinable) {
-  //Typeguards help us to know which exact type we get
+  //Typeguards help us to know which exact type we get and what to do with it
   if(typeof a === 'string' || typeof b === 'string') {
       return a.toString() + b.toString()
   }
