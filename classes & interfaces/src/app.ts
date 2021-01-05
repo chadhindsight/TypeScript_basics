@@ -18,9 +18,9 @@
 // }
 
 ///// INTERFACES WITH CLASSES /////
-// A diff between a custom type and an interface is that interface is only used to describe object structure, custom can be used for other stuff
+// A diff between a custom type and an interface is that interface is only used to describe object structure, & custom can be used for other stuff
 // NB: You can implment multiple interfaces
-// You can also implment inretitance in interfaces
+
 interface AddFn {
   (a: number, b: number): number;
 }
@@ -36,7 +36,7 @@ interface Named {
   //Mark outputName property as optional. Objects based on Named interface may or may not have outputName
   outputName?: string
 }
-
+// You can also implment inretitance in interfaces
 interface Greetable extends Named {
   greet(phrase: string): void;
 }
