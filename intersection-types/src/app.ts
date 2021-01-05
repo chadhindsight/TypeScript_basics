@@ -9,7 +9,6 @@ type Employee = {
 };
 
 // interface ElevatedEmployee extends Employee, Admin {}
-
 type ElevatedEmployee = Admin & Employee;
 
 const e1: ElevatedEmployee = {
@@ -22,3 +21,11 @@ type Combinable = string | number;
 type Numeric = number | boolean;
 
 type Universal = Combinable & Numeric;
+
+function add(a:Combinable, b:Combinable) {
+  //Typeguards help us to know which exact type we get
+  if(typeof a === 'string' || typeof b === 'string') {
+      return a.toString() + b.toString()
+  }
+  return a + b
+}
