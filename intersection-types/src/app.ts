@@ -104,6 +104,19 @@ moveAnimal({type: 'bird', flyingSpeed: 12})
 const userInputElement = document.getElementById('user-input');
 
 if (userInputElement) {
-  //The 'as' keyword tells Typescript that the expression in front of 'as' should be the thing after 'as'
+  //The 'as' keyword tells Typescript that the expression in front of 'as' should be the thing after 'as'.
   (userInputElement as HTMLInputElement).value = 'Hi there!';
 }
+
+interface ErrorContainer {
+  // index type makes it so all propperties associated with this objects must be a string
+  [prop: string]: string
+}
+
+const errorBag: ErrorContainer = {
+  email: 'Not a valid email',
+  username: 'Must start with a capital character' 
+}
+
+// In TypeScript, function overloading is the ability to create multiple methods with the same 
+// name and a different number of parameters or types.
