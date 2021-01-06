@@ -104,5 +104,6 @@ moveAnimal({type: 'bird', flyingSpeed: 12})
 const userInputElement = document.getElementById('user-input');
 
 if (userInputElement) {
+  //The 'as' keyword tells Typescript that the expression in front of 'as' should be the thing after 'as'
   (userInputElement as HTMLInputElement).value = 'Hi there!';
 }
