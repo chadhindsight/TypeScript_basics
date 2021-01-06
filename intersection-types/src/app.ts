@@ -70,3 +70,39 @@ function useVehicle(vehicle: Vehicle) {
 
 useVehicle(v1);
 useVehicle(v2);
+
+//////Discriminated Unions//////
+interface Bird {
+  type: 'bird';
+  flyingSpeed: number
+}
+
+interface Horse {
+  type: 'horse';
+  runningSpeed: number
+}
+
+type Animal = Bird | Horse 
+
+function moveAnimal(animal: Animal) {
+  let speed 
+
+  switch(animal.type) {
+    case 'bird':
+      speed = animal.flyingSpeed
+      break;
+    case 'horse':
+      speed = animal.runningSpeed
+      break;    
+  }
+  console.log('Moving at speed ' + speed)
+}
+
+moveAnimal({type: 'bird', flyingSpeed: 12})
+
+//////Type Casting//////
+const userInputElement = document.getElementById('user-input');
+
+if (userInputElement) {
+  (userInputElement as HTMLInputElement).value = 'Hi there!';
+}
