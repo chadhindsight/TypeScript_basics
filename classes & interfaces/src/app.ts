@@ -19,7 +19,7 @@
 
 ///// INTERFACES WITH CLASSES /////
 // A diff between a custom type and an interface is that interface is only used to describe object structure, & custom can be used for other stuff
-// NB: You can implment multiple interfaces
+// NB: You can implment multiple interfaces.
 
 interface AddFn {
   (a: number, b: number): number;
@@ -36,7 +36,7 @@ interface Named {
   //Mark outputName property as optional. Objects based on Named interface may or may not have outputName
   outputName?: string
 }
-// You can also implment inretitance in interfaces
+// You can also impelment inretitance in interfaces
 interface Greetable extends Named {
   greet(phrase: string): void;
 }
@@ -46,14 +46,14 @@ class Person implements Greetable {
   age = 30;
 
   constructor(n?: string) {
-    if(n) this.name = n;
+    if (n) this.name = n;
   }
 
   greet(phrase: string) {
-    if(this.name){
-    console.log(phrase + ' ' + this.name);
+    if (this.name) {
+      console.log(phrase + ' ' + this.name);
     } else {
-       console.log('Hi!')
+      console.log('Hi!')
     }
   }
 }
