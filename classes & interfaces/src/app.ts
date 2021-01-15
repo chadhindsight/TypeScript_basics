@@ -11,7 +11,7 @@
 
 // user1 = {
 //     name: 'Max',
-//     age: 30,
+//     age: 35,
 //     greet(phrase:string) {
 //         console.log(phrase + '' + this.name)
 //     }
