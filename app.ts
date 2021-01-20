@@ -8,11 +8,12 @@ if (typeof userInput === "string") {
   let userName = userInput;
 }
 
+// They 'never' keyword indicates that value will never be a certain type
 function generateError(message: string, code: number): never {
   throw { message: message, errorCode: code };
   // while (true) {}
 }
 
 generateError("An error occurred!", 500);
-// NB: to compile whole project with multiple files, from the terminal do 'tsc --init'
-// After that you can just run 'tsc'
+// NB: to compile whole project with multiple files, from the terminal do 'tsc --init'. This will generate your tsconfig file.
+// After that you can just run 'tsc'.

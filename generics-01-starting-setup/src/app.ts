@@ -44,6 +44,7 @@ function extractAndConvert<T extends object, U extends keyof T>(
 extractAndConvert({ name: 'Max' }, 'name');
 
 // Generic Classes
+// NB: Generics should be used when you want to lock in a certain type and use it through a class or function
 extractAndConvert({ name: 'Max' }, 'name');
 
 class DataStorage<T extends string | number | boolean> {
@@ -67,7 +68,7 @@ class DataStorage<T extends string | number | boolean> {
 
 const textStorage = new DataStorage<string>();
 textStorage.addItem('Max');
-textStorage.addItem('Manu');
+textStorage.addItem('Nicolle');
 textStorage.removeItem('Max');
 console.log(textStorage.getItems());
 
