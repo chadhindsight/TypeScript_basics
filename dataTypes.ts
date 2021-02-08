@@ -7,7 +7,7 @@
 //   role: [number, string];
 // } = {
 //   name: "Devin",
-//   age: 28,
+//   age: 29,
 //   hobbies: ["Football", "Drawing"],
 //   role: [2, "Author"],
 // };
