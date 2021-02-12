@@ -13,7 +13,7 @@
 // })
 
 // Creating and using a generic function. This tells typescript that objA & objB can be diff datatypes
-// For generic types, you can set certain contstraints for what types are allowed
+// For generic types, you can set certain contstraints for what types are allowed!
 function merge<T extends object, U extends object>(objA: T, objB: U) {
     return Object.assign(objA, objB);
 }
